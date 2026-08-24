@@ -13,7 +13,7 @@
 
 ## 💡 我的技术哲学：为什么要“重复造轮子”？
 
-很多人都问过我，为什么有了 Linux 还要写 [Tungsten](https://github.com/Tinmc189623/Tungsten)？有了 Chromium 还要写 [Vexo-SP](https://github.com/Tinmc189623/Vexo-SP)？有了 WordPress 还要写 [VaelorCMS](https://github.com/Tinmc189623/VaelorCMS)？
+为什么有了 Linux 还要写 [Tungsten](https://github.com/Tinmc189623/Tungsten)？有了 Chromium 还要写 [YSU](https://github.com/Tinmc189623/YSU)？有了 WordPress 还要写 [VaelorCMS](https://github.com/Tinmc189623/VaelorCMS)？
 
 我的回答很简单：**因为“现成的”模糊了技术的边界。**
 - 写内核，是为了亲手触摸到 CPU 的陷阱门和页表；
@@ -34,10 +34,10 @@
 
 这是我最硬核的系统级项目。与常规内核不同，Tungsten 实现了**四层特权级架构（Ring 0 - Ring 3）**，重点强化了 Ring 0 / Ring 1 的隔离设计。Rust 保证了内存安全，Zig 则作为硬件抽象层无痛地处理 C 库的交叉编译。目前它已经能在 QEMU 中独立引导，并初步支持键盘和帧缓冲。这个内核的源码完全开放，但完整的用户态操作系统目前作为闭源项目保留——如果你想亲眼看着一个操作系统从 0 开始引导，这里就是起点。
 
-### 2. [Vexo-SP](https://github.com/Tinmc189623/Vexo-SP) —— Rust 浏览器内核（YSU）
+### 2. [YSU](https://github.com/Tinmc189623/YSU) —— Rust 浏览器内核（YSU）
 > *技术栈：Rust | License: GNU AGPL v3*
 
-Web 是现代的操作系统，而浏览器是它的内核。Vexo-SP 是我对浏览器工作原理的硬核拆解。它用 Rust 从头实现 HTML 的词法/语法解析、CSS 样式计算和基础的布局引擎。虽然离完整浏览器还远，但它的目标是成为教育领域探索浏览器内部机制的范本。如果你对“网页是如何画出来的”充满好奇，这个仓库会给你答案。
+Web 是现代的操作系统，而浏览器是它的内核。YSU 是我对浏览器工作原理的硬核拆解。它用 Rust 从头实现 HTML 的词法/语法解析、CSS 样式计算和基础的布局引擎。虽然离完整浏览器还远，但它的目标是成为教育领域探索浏览器内部机制的范本。如果你对“网页是如何画出来的”充满好奇，这个仓库会给你答案。
 
 ### 3. [VaelorCMS](https://github.com/Tinmc189623/VaelorCMS) —— 纯自研 Go 内容管理系统
 > *技术栈：Go + SQLite | License: GNU AGPL v3*
@@ -85,7 +85,7 @@ Web 是现代的操作系统，而浏览器是它的内核。Vexo-SP 是我对�
 ## 🗺️ 2026 下半年路线图
 
 - **Tungsten v0.3.0**：完善内存管理单元（MMU），引入简易的进程调度。
-- **Vexo-SP**：实现 CSS Flexbox 布局的初步支持。
+- **YSU**：实现 CSS Flexbox 布局的初步支持。
 - **Coder v0.5.0**：增加本地代码索引功能（RAG），让 AI 更懂你的项目上下文。
 - **OpenSoke**：揭开面纱，发布第一个可运行的 Demo。
 
