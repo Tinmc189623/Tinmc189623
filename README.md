@@ -63,13 +63,13 @@ Web 是现代的操作系统，而浏览器是它的内核。YSU 是我对浏览
 
 ## 🛠️ 技术栈精准画像
 
-| 领域 | 精通/主力 | 探索/兴趣 |
+| 领域 | 主力 | 探索/兴趣 |
 | :--- | :--- | :--- |
-| **系统编程** | Rust（夜版）、Zig | C++、汇编（x86_64） |
-| **后端开发** | Go（自研路由/ORM） | SQLite、PostgreSQL |
-| **AI / LLM** | C# (.NET 11)、提示工程、工具调用 | ONNX、本地量化部署 |
+| **系统编程** | Rust、Zig | C++、汇编（8086） |
+| **后端开发** | Go | PostgreSQL |
+| **AI / LLM** | C#、提示工程、工具调用 | ONNX、本地量化部署 |
 | **前端/渲染** | HTML5/CSS 解析、布局计算 | WebAssembly、Skia |
-| **构建工具** | Make、Cargo、dotnet CLI | Nix、交叉编译 |
+| **构建工具** | Make、Cargo、.NET CLI | Nix、交叉编译 |
 
 ---
 
