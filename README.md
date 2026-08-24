@@ -68,7 +68,7 @@ YouRight-AI 是一个带有讽刺性质的项目，核心逻辑为“你说得�
 
 ## 🤝 联系方式
 
-- 🌐 个人网站：[189623.nexsteaduser.com](https://189623.nexsteaduser.com)
+- 🌐 个人网站：[189623.nexsteaduser.com](https://189623.nexlyh.com)
 - 🏢 组织：[Nexsteaduser](https://www.nexsteaduser.com/) · [Nexlyh](https://nexlyh.com/)
 
 ---
