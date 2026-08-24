@@ -66,7 +66,7 @@ Web 是现代的操作系统，而浏览器是它的内核。YSU 是我对浏览
 | 领域 | 主力 | 探索/兴趣 |
 | :--- | :--- | :--- |
 | **系统编程** | Rust、Zig | C++、汇编（8086） |
-| **后端开发** | Go | PostgreSQL |
+| **后端开发/数据库** | Go | PostgreSQL |
 | **AI / LLM** | C#、提示工程、工具调用 | ONNX、本地量化部署 |
 | **前端/渲染** | HTML5/CSS 解析、布局计算 | WebAssembly、Skia |
 | **构建工具** | Make、Cargo、.NET CLI | Nix、交叉编译 |
@@ -93,15 +93,15 @@ Web 是现代的操作系统，而浏览器是它的内核。YSU 是我对浏览
 
 ## 🤝 关于协作与联系
 
-虽然我一个人死磕底层，但我并不排斥有趣的合作。如果你：
+虽然我一个人死磕底层，但我并不排斥有趣的合作。如果你
 - 对操作系统、浏览器引擎或自研 AI 工具有狂热兴趣；
-- 能接受“不迁就、只讲技术”的交流风格；
+- 能接受我的交流风格；
 - 想探讨 Rust 和 Zig 的混编，或者 Go 的底层调度。
 
 欢迎通过以下方式找到我：
 
-- 🌐 个人官网：[nexsteaduser.com](https://nexsteaduser.com)
-- 🏢 组织主页：[Nexsteaduser](https://github.com/Nexsteaduser) · [Nexlyh](https://github.com/Nexlyh)
+- 🌐 个人官网：[189623.nexsteaduser.com](https://189623.nexsteaduser.com)
+- 🏢 组织主页：[Nexsteaduser](https://www.nexsteaduser.com/) · [Nexlyh](https://nexlyh.com/)
 - 📧 （网站上有我的邮箱，欢迎来信）
 
 ---
