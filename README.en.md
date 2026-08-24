@@ -75,7 +75,7 @@ Although I mostly work alone at the low level, I'm open to interesting collabora
 
 Feel free to reach out via:
 
-- 🌐 Personal site: [189623.nexsteaduser.com](https://189623.nexsteaduser.com)
+- 🌐 Personal site: [189623.nexsteaduser.com](https://189623.nexlyh.com)
 - 🏢 Organisations: [Nexsteaduser](https://www.nexsteaduser.com/) · [Nexlyh](https://nexlyh.com/)
 - 📧 (you'll find my email on the website — welcome to write.)
 
