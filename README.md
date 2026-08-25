@@ -1,7 +1,5 @@
 # 🧑‍💻 Tinmc189623
 
-**从晶体管到 Transformer，自己造轮子的人。**
-
 我是 Tinmc189623，[Nexsteaduser](https://nexsteaduser.com) 与 Nexlyh 的创始人。
 
 [![Website](https://img.shields.io/badge/🌐-nexsteaduser.com-1e90ff?style=flat-square&logo=google-chrome)](https://nexsteaduser.com)
@@ -38,10 +36,9 @@ Coder 是一个运行在终端中的 AI Agent，支持流式 Markdown 渲染、�
 
 YouRight-AI 是一个带有讽刺性质的项目，核心逻辑为“你说得对”（默认重复 35 次）和“双重失忆系统”。使用自创的“油饼语言”编写，包含 15 个依赖包。
 
-### 6. [OpenSoke](https://github.com/Tinmc189623/OpenSoke) —— 新项目
-> *创建于 2026 年 8 月 24 日*
+### 6. [OpenSoke](https://github.com/Tinmc189623/OpenSoke) —— Soke 开源版
+> 标准版
 
-这是一个新建的空白仓库，项目方向尚未最终确定。
 
 ---
 
@@ -50,10 +47,10 @@ YouRight-AI 是一个带有讽刺性质的项目，核心逻辑为“你说得�
 | 领域 | 主力 | 探索/兴趣 |
 | :--- | :--- | :--- |
 | **系统编程** | Rust、Zig | C++、汇编（8086） |
-| **后端开发/数据库** | Go | PostgreSQL |
+| **后端开发/数据库** | Go、.NET、Java | PostgreSQL |
 | **AI / LLM** | C#、提示工程、工具调用 | ONNX、本地量化部署 |
 | **前端/渲染** | HTML5/CSS 解析、布局计算 | WebAssembly、Skia |
-| **构建工具** | Make、Cargo、.NET CLI | Nix、交叉编译 |
+| **构建工具** | Make、Cargo、zig build | Nix、交叉编译 |
 
 ---
 
@@ -73,5 +70,4 @@ YouRight-AI 是一个带有讽刺性质的项目，核心逻辑为“你说得�
 
 ---
 
-> *"态度永远好，事情永远不办。"*  
-> —— YouRight-AI
+> *"态度永远好，事情永远不办。"* —— YouRight-AI
