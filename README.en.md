@@ -38,10 +38,10 @@ This is the project closest to my daily work. Coder is not a simple API wrapper;
 
 This is a touch of humour in my serious development work. YouRight‑AI bills itself as "The Big Idiot AI Program", with core logic of "you're right" (repeating it 35 times by default) and a "double amnesia system". It's written in my own esolang "YouBing Language", with 15 dependencies, some of which are "purely decorative". This project exists to remind myself (and visitors) that **the tech world should not be blinded by AI hype — a dose of satire and critical thinking is healthy.**
 
-### 6. [OpenSoke](https://github.com/Tinmc189623/OpenSoke) — A Brand‑New Spark
-> *Created on 2026‑08‑24*
+### 6. [OpenSoke](https://github.com/Tinmc189623/OpenSoke) — Open‑source edition of Soke
+> Standard edition
 
-This is a freshly created blank repository, codenamed "Open Soke Standard Edition". The exact direction is still brewing, but one thing is certain: it will follow my consistent style — **start from zero, fight at the low‑level.** Give it some time; it will grow into something interesting.
+Open‑source edition of Soke OS
 
 ---
 
@@ -50,10 +50,10 @@ This is a freshly created blank repository, codenamed "Open Soke Standard Editio
 | Domain | Primary | Exploring / Interest |
 | :--- | :--- | :--- |
 | **Systems Programming** | Rust, Zig | C++, Assembly (8086) |
-| **Backend / Databases** | Go | PostgreSQL |
+| **Backend / Databases** | Go、.NET、Java | PostgreSQL |
 | **AI / LLM** | C#, Prompt Engineering, Tool Calling | ONNX, Local Quantised Deployment |
 | **Frontend / Rendering** | HTML5/CSS Parsing, Layout Computation | WebAssembly, Skia |
-| **Build Tools** | Make, Cargo, .NET CLI | Nix, Cross‑compilation |
+| **Build Tools** | Make, Cargo, Zig build | Nix, Cross‑compilation |
 
 ---
 
