@@ -1,63 +1,53 @@
 # 🧑‍💻 Tinmc189623
 
-**From transistors to Transformers — a builder of wheels.**
-
-I'm Tinmc189623, founder of [Nexsteaduser](https://nexsteaduser.com) and Nexlyh.
+I am Tinmc189623, founder of [Nexsteaduser](https://nexsteaduser.com) and Nexlyh.
 
 [![Website](https://img.shields.io/badge/🌐-nexsteaduser.com-1e90ff?style=flat-square&logo=google-chrome)](https://nexsteaduser.com)
 [![GitHub followers](https://img.shields.io/github/followers/Tinmc189623?label=Follow&style=social)](https://github.com/Tinmc189623)
 
 ---
 
-## 🔭 The Ecosystem I'm Building
+## 🔭 Projects I'm Building
 
-My projects form a technology matrix from bare metal to high‑level applications. Here's an in‑depth look at all my public repositories:
+My projects span from low-level hardware to high-level applications. Below are introductions to all public repositories:
 
-### 1. [Tungsten](https://github.com/Tinmc189623/Tungsten) — A Four‑Level Privilege x86_64 Kernel
-> *Stack: Rust (Core) + Zig (HAL) + FreeType | License: GPL v3*
+### 1.
 
-This is my hardest‑core system project. Unlike conventional kernels, Tungsten implements a **four‑level privilege architecture (Ring 0 – Ring 3)**, with a strong focus on Ring 0 / Ring 1 isolation. Rust ensures memory safety, while Zig serves as the hardware abstraction layer to seamlessly handle cross‑compilation of C libraries. It already boots independently in QEMU and has preliminary support for keyboard and framebuffer. The kernel source is fully open, but the full userspace OS remains closed‑source for now.
+### 2. [YSU](https://github.com/Tinmc189623/YSU) — Rust Browser Engine
+> *Tech stack: Rust | License: Apache 2.0*
 
-### 2. [YSU](https://github.com/Tinmc189623/YSU) — A Rust Browser Engine (YSU)
-> *Stack: Rust | License: Apache 2.0*
+YSU is a browser engine implemented from scratch in Rust, including HTML lexing/parsing, CSS style computation, and a basic layout engine.
 
-The web is the modern OS, and the browser is its kernel. YSU is my hard‑core deconstruction of how browsers work. Written in Rust, it implements HTML lexical/syntax parsing, CSS style computation, and a basic layout engine from the ground up. It's far from a full browser, but its goal is to become a reference for exploring browser internals in education.
+### 3. [VaelorCMS](https://github.com/Tinmc189623/VaelorCMS) — Go Content Management System
+> *Tech stack: Go + SQLite | License: GNU AGPL v3*
 
-### 3. [VaelorCMS](https://github.com/Tinmc189623/VaelorCMS) — A Pure Go CMS
-> *Stack: Go + SQLite | License: GNU AGPL v3*
+VaelorCMS is a content management system that includes self-developed Vaelor Core components: a route dispatcher, chained ORM, and middleware system. It has been used in non-production environments.
 
-There's no shortage of CMSs, but there's a shortage of **CMSs that use zero third‑party frameworks**. VaelorCMS includes my self‑developed Vaelor Core: a lightweight router, a chain‑able ORM, and a clean middleware system. It has reached version 1.0.0, meaning it's already running in my actual production environment. Its code structure is clear and is a great read for backend developers who want to learn Go's low‑level networking and database interactions.
+### 4. [Coder](https://github.com/Tinmc189623/Coder) — Terminal AI Programming Assistant
+> *Tech stack: C# / .NET 11 | Current version: v0.3.0*
 
-### 4. [Coder](https://github.com/Tinmc189623/Coder) — A Production‑Grade Terminal AI Coding Assistant
-> *Stack: C# / .NET 11 | Current version: v0.3.0*
+Coder is an AI Agent that runs in the terminal, supporting streaming Markdown rendering, visualization of tool call status, and permission control. Its configuration uses a layered design (project-level `.coder/settings.toml` + global `~/.coder/settings.toml`). It is compatible with model providers such as OpenAI, Anthropic, and Ollama.
 
-This is the project closest to my daily work. Coder is not a simple API wrapper; it's an AI Agent with a full TUI (terminal user interface). It supports streaming Markdown rendering, visualisation of tool call status, granular permission control, and a **layered configuration system** (project‑level `.coder/settings.toml` + global `~/.coder/settings.toml`). It works with OpenAI, Anthropic, and Ollama, seamlessly integrating with both cloud‑based and local open‑source models.
+### 5. [YouRight-AI](https://github.com/Tinmc189623/YouRight-AI) — Experimental Project
+> *Tech stack: YouBing Language*
 
-### 5. [YouRight‑AI](https://github.com/Tinmc189623/YouRight‑AI) — The "Big Idiot" AI (Satirical Experiment)
-> *Stack: YouBing Language*
-
-This is a touch of humour in my serious development work. YouRight‑AI bills itself as "The Big Idiot AI Program", with core logic of "you're right" (repeating it 35 times by default) and a "double amnesia system". It's written in my own esolang "YouBing Language", with 15 dependencies, some of which are "purely decorative". This project exists to remind myself (and visitors) that **the tech world should not be blinded by AI hype — a dose of satire and critical thinking is healthy.**
-
-### 6. [OpenSoke](https://github.com/Tinmc189623/OpenSoke) — Open‑source edition of Soke
-> Standard edition
-
-Open‑source edition of Soke OS
+The core logic of YouRight-AI is "You're right" (repeated 35 times by default) and a "dual amnesia system." It is written in "YouBing Language" and includes 15 dependency packages.
 
 ---
 
-## 🛠️ Tech Stack Snapshot
+## 🛠️ Tech Stack
 
-| Domain | Primary | Exploring / Interest |
+| Area | Primary | Exploring/Interests |
 | :--- | :--- | :--- |
 | **Systems Programming** | Rust, Zig | C++, Assembly (8086) |
-| **Backend / Databases** | Go、.NET、Java | PostgreSQL |
-| **AI / LLM** | C#, Prompt Engineering, Tool Calling | ONNX, Local Quantised Deployment |
-| **Frontend / Rendering** | HTML5/CSS Parsing, Layout Computation | WebAssembly, Skia |
-| **Build Tools** | Make, Cargo, Zig build | Nix, Cross‑compilation |
+| **Backend Development/Databases** | Go, .NET, Java | PostgreSQL |
+| **AI / LLM** | C#, prompt engineering, tool calling | ONNX, local quantized deployment |
+| **Frontend/Rendering** | HTML5/CSS parsing, layout computation | WebAssembly, Skia |
+| **Build Tools** | Make, Cargo, zig build | Nix, cross-compilation |
 
 ---
 
-## 📈 GitHub Activity & Stats
+## 📈 GitHub Stats
 
 <p align="center">
   <img src="https://github-readme-stats.vercel.app/api?username=Tinmc189623&show_icons=true&theme=radical&count_private=true" alt="GitHub Stats" width="48%" />
@@ -66,20 +56,11 @@ Open‑source edition of Soke OS
 
 ---
 
-## 🤝 Collaboration & Contact
+## 🤝 Contact
 
-Although I mostly work alone at the low level, I'm open to interesting collaborations. If you:
-- Are passionate about operating systems, browser engines, or self‑built AI tools;
-- Can handle my straightforward communication style;
-- Want to discuss Rust/Zig interop or Go's low‑level scheduling.
-
-Feel free to reach out via:
-
-- 🌐 Personal site: [189623.nexsteaduser.com](https://189623.nexlyh.com)
-- 🏢 Organisations: [Nexsteaduser](https://www.nexsteaduser.com/) · [Nexlyh](https://nexlyh.com/)
-- 📧 (you'll find my email on the website — welcome to write.)
+- 🌐 Personal website: [189623.nexsteaduser.com](https://189623.nexlyh.com)
+- 🏢 Organizations: [Nexsteaduser](https://www.nexsteaduser.com/) · [Nexlyh](https://nexlyh.com/)
 
 ---
 
-> *"Always a good attitude, never gets anything done."*  
-> — The core value of YouRight‑AI, a joke for this hype‑driven era.
+> *"Attitude is always good, things are never done."* — YouRight-AI
