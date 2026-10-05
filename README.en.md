@@ -58,7 +58,7 @@ The core logic of YouRight-AI is "You're right" (repeated 35 times by default) a
 
 ## 🤝 Contact
 
-- 🌐 Personal website: [189623.nexsteaduser.com](https://189623.nexlyh.com)
+- 🌐 website: [www.nexlyh.com](https://www.nexlyh.com)
 - 🏢 Organizations: [Nexsteaduser](https://www.nexsteaduser.com/) · [Nexlyh](https://nexlyh.com/)
 
 ---
