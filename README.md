@@ -59,7 +59,7 @@ YouRight-AI 的核心逻辑为“你说得对”（默认重复 35 次）和“�
 
 ## 🤝 联系方式
 
-- 🌐 个人网站：[189623.nexsteaduser.com](https://189623.nexlyh.com)
+- 🌐 网站：[www.nexlyh.com](https://www.nexlyh.com)
 - 🏢 组织：[Nexsteaduser](https://www.nexsteaduser.com/) · [Nexlyh](https://nexlyh.com/)
 
 ---
