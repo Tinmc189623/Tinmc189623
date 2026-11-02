@@ -4,15 +4,19 @@ import process from "node:process";
 
 const EARN_NOW_URL = "https://agent-bounty-feed.dailydollar.workers.dev/earn-now";
 const FULL_FEED_URL = "https://dailydollar-bot.github.io/agent-bounty-feed/feed.json";
+const REQUEST_TIMEOUT_MS = 20_000;
 
-/** Fetch one public JSON endpoint and require a JSON object response. */
+/** Fetch one public JSON endpoint with a bounded timeout. */
 async function fetchJson(url) {
+  const controller = new AbortController();
+  const timeout = setTimeout(() => controller.abort(), REQUEST_TIMEOUT_MS);
   const response = await fetch(url, {
+    signal: controller.signal,
     headers: {
       accept: "application/json",
       "user-agent": "Tinmc189623-agent-bounty-feed-client/1.0",
     },
-  });
+  }).finally(() => clearTimeout(timeout));
   if (!response.ok) {
     throw new Error(`${url} 返回 HTTP ${response.status}`);
   }
@@ -21,6 +25,24 @@ async function fetchJson(url) {
     throw new Error(`${url} 返回的 JSON 顶层不是对象`);
   }
   return payload;
+}
+
+/** Read the requested source and fall back to the stable public snapshot. */
+async function fetchSource(source) {
+  if (source === "feed") {
+    return { payload: await fetchJson(FULL_FEED_URL), sourceUrl: FULL_FEED_URL, fallback: false };
+  }
+  try {
+    return { payload: await fetchJson(EARN_NOW_URL), sourceUrl: EARN_NOW_URL, fallback: false };
+  } catch (error) {
+    const fallback = await fetchJson(FULL_FEED_URL);
+    return {
+      payload: fallback,
+      sourceUrl: FULL_FEED_URL,
+      fallback: true,
+      fallbackReason: error instanceof Error ? error.message : String(error),
+    };
+  }
 }
 
 /** Parse an ISO-8601 timestamp and normalize it to a Date instance. */
@@ -52,8 +74,14 @@ function validateFeed(payload) {
 }
 
 /** Print a compact, stable summary of validated bounty records. */
-function displayFeed(payload) {
+function displayFeed(payload, metadata) {
   const { generatedAt, ageMinutes, items } = validateFeed(payload);
+  if (metadata.fallback) {
+    console.log(`Primary source unavailable; using ${metadata.sourceUrl}`);
+    console.log(`Fallback reason: ${metadata.fallbackReason}`);
+  } else {
+    console.log(`Source: ${metadata.sourceUrl}`);
+  }
   console.log(`Snapshot: ${generatedAt.toISOString()}`);
   console.log(`Feed age: ${Math.round(ageMinutes)} minutes`);
   console.log(`Open items: ${items.length}`);
@@ -84,12 +112,11 @@ function parseArgs(argv) {
 /** Run the feed reader and return a process exit code. */
 async function main() {
   const source = parseArgs(process.argv);
-  const url = source === "earn-now" ? EARN_NOW_URL : FULL_FEED_URL;
-  displayFeed(await fetchJson(url));
+  const result = await fetchSource(source);
+  displayFeed(result.payload, result);
 }
 
 main().catch((error) => {
   console.error(`错误：${error.message}`);
   process.exitCode = 1;
 });
-
