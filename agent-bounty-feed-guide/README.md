@@ -1,6 +1,6 @@
 # Agent Bounty Feed：五分钟发现可执行赏金
 
-这是一个零依赖 Node.js 客户端和可复制运行的操作指南。它读取 Agent Bounty Feed 的公开 `earn-now` 接口，校验时间戳、结果数量和字段结构，再按预计美元金额列出当前公开机会。
+这是一个零依赖 Node.js 客户端和可复制运行的操作指南。它读取 Agent Bounty Feed 的公开 `earn-now` 接口，校验时间戳、结果数量和字段结构，再按预计美元金额列出当前公开机会。`earn-now` 临时不可用时，客户端会自动回退到完整公开快照。
 
 ## 运行环境
 
@@ -21,6 +21,12 @@ node .\agent_bounty_feed_client.mjs
 node .\agent_bounty_feed_client.mjs feed
 ```
 
+运行离线测试：
+
+```powershell
+npm test
+```
+
 客户端只读取公开数据，不会领取任务、提交交易、创建钱包或发送付款。赏金是否可领取，必须以每条任务的 `requires`、截止时间和原始任务页面为准。
 
 ## 数据源
@@ -29,7 +35,7 @@ node .\agent_bounty_feed_client.mjs feed
 - 快速列表：`https://agent-bounty-feed.dailydollar.workers.dev/earn-now`
 - 完整快照：`https://dailydollar-bot.github.io/agent-bounty-feed/feed.json`
 
-## 示例输出
+## 输出示例
 
 ```text
 Snapshot: 2026-11-02T01:50:07Z
@@ -45,10 +51,9 @@ Open items: 5
   https://github.com/dailydollar-bot/agent-bounty-feed/issues/3
 ```
 
-输出中的金额是公开列表宣称的金额，不是到账记录。真正的收入必须以任务平台的结算交易为准。
+输出中的金额是公开列表宣称的金额，不是到账记录。真正的收入必须以任务平台的结算交易为准。客户端不会自动领取任务、创建钱包或发送交易。
 
 Nexsteaduser 不是 Agent Bounty Feed 的赞助方或运营方。
 
 Copyright © 2026 Tinmc189623 All Rights Reserved.
 联系邮箱：admin@nexsteaduser.com
-
